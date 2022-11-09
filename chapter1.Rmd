@@ -11,3 +11,5 @@ date()
 ```
 The text continues here.
 
+This is my very first time use R program and a bit confuse, but try hard to learn. Eventhough I'm late for doing this, it should have done last week, but never late than never.
+https://github.com/dewisusan/IODS-project

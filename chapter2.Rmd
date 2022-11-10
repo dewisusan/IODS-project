@@ -9,5 +9,6 @@
 ```{r}
 date()
 ```
-
+I feel very slow like a snail, but try hard to learn. This week I have been learn about the how to working with R and publish it on my Github diary. That's wonderful. 
 Here we go again...
+jjjj

@@ -1,5 +1,6 @@
 ---
 title: "IODS course project"
+author: "Dewi Susan"
 output:
   html_document:
     theme: cosmo

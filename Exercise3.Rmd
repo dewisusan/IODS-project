@@ -2,6 +2,8 @@
 title: "**Introduction to Open Data Science, Exercise Set 3**"
 
 subtitle: "**Logistic regression**"
+Name: Dewi Susan
+Date: 16 Nov 2022
 
 output: 
   html_document:
@@ -77,10 +79,10 @@ url_math
 math <- read.table(url_math, sep = ";" , header = TRUE)
 
 # web address for Portuguese class data
-url_por <- paste("replace me!", "student-por.csv", sep = " change me! ")
+url_por <- paste(url, "student-por.csv", sep = "/")
 
 # print out the address
-
+url_por
 
 # read the Portuguese class questionnaire data into memory
 por <- read.table(url_por, sep = ";", header = TRUE)
@@ -102,7 +104,7 @@ Here we'll use `inner_join()` function from the dplyr package to combine the dat
 
 ```{r, echo=FALSE}
 # Pre-exercise-code (Run this code chunk first! Do NOT edit it.)
-
+library(tidyverse)
 # Click the green arrow ("Run Current Chunk") in the upper-right corner of this chunk. This will initialize the R objects needed in the exercise. Then move to Instructions of the exercise to start working.
 
 math <- read.table("https://raw.githubusercontent.com/KimmoVehkalahti/Helsinki-Open-Data-Science/master/datasets/student-mat.csv", sep=";", header=TRUE)
@@ -133,19 +135,19 @@ Hints:
 library(dplyr)
 
 # give the columns that vary in the two data sets
-free_cols
+free_cols <- c("failures", "paid", "absences", "G1", "G2", "G3")
 
 # the rest of the columns are common identifiers used for joining the data sets
-join_cols <- setdiff(colnames(por), "change me!")
+join_cols <- setdiff(colnames(por), free_cols)
 
 # join the two data sets by the selected identifiers
-math_por <- inner_join(math, por, by = "change me!")
+math_por <- inner_join(math, por, by = join_cols)
 
 # look at the column names of the joined data set
-
+names(math_por)
 
 # glimpse at the joined data set
-
+glimpse(math_por)
 
 
 ```
@@ -201,13 +203,14 @@ Hint:
 # dplyr, math_por, join_by are available
 
 # print out the column names of 'math_por'
-
+colnames(math_por)
 
 # create a new data frame with only the joined columns
-alc <- select(math_por, all_of("change me!"))
+alc <- select(math_por, all_of(join_cols))
+
 
 # print out the columns not used for joining (those that varied in the two data sets)
-
+free_cols
 
 # for every column name not used for joining...
 for(col_name in free_cols) {
@@ -224,12 +227,12 @@ for(col_name in free_cols) {
     alc[col_name] <- round(rowMeans(two_cols))
   } else { # else (if the first column vector was not numeric)...
     # add the first column vector to the alc data frame
-    alc[col_name] <- "change me!"
+    alc[col_name] <- first_col
   }
 }
 
 # glimpse at the new combined data
-
+glimpse(first_col)
 
 
 ```

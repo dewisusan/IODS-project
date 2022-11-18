@@ -7,7 +7,7 @@
 - Assume the reader has no previous knowledge of your data or the more advanced methods you are using.
 
 ```{r}
-date(14/11/2022)
+date(Thursday Nov 16 16:16:00 2022)
 ```
 I think, I am starting to understand how is R working,  such seeing a new bright vision for future... XOXO 
 Eventhough sometimes I find error when wrong filling commands, but whenever I found out the right one it was kind of exciting and much eager to workin the rest of the exercise. Super interesting!

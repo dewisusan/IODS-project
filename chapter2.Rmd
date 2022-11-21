@@ -10,5 +10,16 @@
 date()
 ```
 I feel very slow like a snail, but try hard to learn. This week I have been learn about the how to working with R and publish it on my Github diary. That's wonderful. 
-Here we go again...
-jjjj
+
+In this Chapter 2, the exercise part 1 started with learn to view and reading data. How to look dimension and structure of the data using view(), dim() and str().
+Part 2, learn to scaling variable by dividing each number in a vector and in a column.
+Part 3, regarding how to combining variables using rowMean() and function select() to select the data.
+Part 4, how to select columns, use function select() to select data in column that we want to analysis.
+Part 5, learn how to give name to a column by using function colnames()
+Part 6, regarding excluding data observation using function >
+Part 7, learn how to visualize data with graph using function ggplot2 and give title using ggtitle().
+Part 8, exploring data frame, how to draw a scatter matrix using function ggpair(), mapping() and aes() to select intended data and visualize in a plot.
+Part 9, simple regression, using function lm() and display the plot using function summary().
+Part 10, multiple regression, how to analize more than one variables using function lm().
+Part 11, graphical model validation, produce graphics in different style using function which().
+Part 12, making prediction, using function predict() to make a prediction based on new observation.

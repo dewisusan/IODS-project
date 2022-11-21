@@ -234,7 +234,7 @@ keep_columns <- c("gender","Age","attitude", "deep", "stra", "surf", "Points")
 learning2014 <- keep_columns
 
 # see the structure of the new dataset
-learning2014 <- select(lrn14, one_of(keep_columns))
+learning2014 <- select(one_of(learning2014, keep_columns))
 
 ```
 
@@ -338,7 +338,7 @@ male_students <- filter(learning2014, gender == "M")
 # select rows where points is greater than zero
 learning2014 <- filter(learning2014, points > 0)
 
-view(learning2014, male_students)
+view(learning2014)
 ```
 
 

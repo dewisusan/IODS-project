@@ -9,5 +9,18 @@
 ```{r}
 date(Thursday Nov 16 16:16:00 2022)
 ```
-I think, I am starting to understand how is R working,  such seeing a new bright vision for future... XOXO 
-Eventhough sometimes I find error when wrong filling commands, but whenever I found out the right one it was kind of exciting and much eager to workin the rest of the exercise. Super interesting!
+Chapter 3. Logistic regression
+Part 3.1, More datasets, is practise to combine more than one data within the same analysis. To combine data, using paste() function, and we can see the data with function colnames(); colnames().
+Part 3.2, Joining two datasets, is to join intended data into our data set, we can use function inner_join(), setdiff() and glimpse() to see the combined data.
+Part 3.3, if-else structure, if() function is used a single logical condition as an argument and performs an action only if that condition is true. This function can combine with else () function when the condition is false.
+Part 3.4 Mutation. In this part, we learn to adding a new variables as a mutation of the existing. Function mutate() is used to create mutation.
+Part 3.5 So many plots, to display data with many different variables, using function gather() and %>%.
+Part 3.6 The pipe, is to practice summarising data. To get the data, function %>% is used combined with group_by() and summarise().
+Part 3.7 Box plots by group, is to learn how to create box plots and also give the title on it using function geom_boxplot() and ggtitle().
+Part 3.8 Learning a logistic regression model. In this part we practice to produce a regression model using function glm() and coef().
+Part 3.9 From coefficients to odd ratios, is learning to interpreted the exponents of the coefficients of a logistic regression model as odds ratios between a unit change (vs. no change) in the corresponding explanatory variable, using function confint() and CI().
+Part 3.10 Binary predictions (1), it is to make a prediction to a model object in a linear model, using predict() function.
+Part 3.11 Binary predictions (2), in this part learn to make a prediction and produce table using prop.table(), %>% and table() functions.
+Part 3.12 Accuracy and loss functions. In this part, we learn to measure of performance in binary calculation by classified correctly observations. loss_function() function is used to find out the result.
+Part 3.13 Cross-validation, to learn about how to testing a predictive model on unseen data. The value of a penalty (loss) function (mean prediction error) is computed on data not used for finding the model. Low value = good. Cross-validation gives a good estimate of the actual predictive power of the model. It can also be used to compare different models or classification methods. To do this, loss function has to be define by computing loss_func, an do cross validation using cv() function.
+

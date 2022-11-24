@@ -7,7 +7,7 @@
 - Assume the reader has no previous knowledge of your data or the more advanced methods you are using.
 
 ```{r}
-date(Thursday Nov 16 16:16:00 2022)
+date()
 ```
 Chapter 3. Logistic regression
 Part 3.1, More datasets, is practise to combine more than one data within the same analysis. To combine data, using paste() function, and we can see the data with function colnames(); colnames().

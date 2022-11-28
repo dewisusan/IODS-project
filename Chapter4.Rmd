@@ -14,5 +14,15 @@ output: html_document
 - Assume the reader has no previous knowledge of your data or the more advanced methods you are using.
 
 ```{r}
-date(Thursday Nov 24 10:11:00 2022)
+date()
 ```
+Chapter 4, learning Clustering and classification
+
+4.1. Dataset inside R. The sample data that used in this chapter is a data named "Boston" dataset from MASS. We can see the structure of the data by type str() function, type the summary() to see the detail of data and draw pair plot with pair() function.
+
+4.2. Correlation plot. To see correlation between data, we can use function cor() and corrplot(). Rounding data, use round() function and we can draw matrix with cor_matrix() function.
+
+4.3. Scale the whole dataset. To scale the data, use function scale() function to substract the column mean from the corresponding column and divide the difference with standard deviation.To makea data frame use function, as.data.frame().
+4.4. Creating a factor variable. To create a factor variable, we can use quantile() function and save the result to 'bins'. To create a vector, use cut () function and set the 'break'. We can see the result in the table.
+4.5. Divide and conquer: train and test sets. To test the model prediction whether it is fit or not, we can train the model by splitting the data and train as a new data. Some function that can be use are train(), test(), correct_classes().
+4.6. Linear discriminant analysis. It is a classification and dimensional reduction method which separatethe target variables from the linear combination variables.

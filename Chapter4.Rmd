@@ -9,9 +9,7 @@ output: html_document
 
 *Describe the work you have done this week and summarize your learning.*
 
-- Describe your work and results clearly. 
-- Assume the reader has an introductory course level understanding of writing and reading R code as well as statistical methods.
-- Assume the reader has no previous knowledge of your data or the more advanced methods you are using.
+
 
 ```{r}
 date()
@@ -23,6 +21,17 @@ Chapter 4, learning Clustering and classification
 4.2. Correlation plot. To see correlation between data, we can use function cor() and corrplot(). Rounding data, use round() function and we can draw matrix with cor_matrix() function.
 
 4.3. Scale the whole dataset. To scale the data, use function scale() function to substract the column mean from the corresponding column and divide the difference with standard deviation.To makea data frame use function, as.data.frame().
+
 4.4. Creating a factor variable. To create a factor variable, we can use quantile() function and save the result to 'bins'. To create a vector, use cut () function and set the 'break'. We can see the result in the table.
+
 4.5. Divide and conquer: train and test sets. To test the model prediction whether it is fit or not, we can train the model by splitting the data and train as a new data. Some function that can be use are train(), test(), correct_classes().
+
 4.6. Linear discriminant analysis. It is a classification and dimensional reduction method which separatethe target variables from the linear combination variables.
+
+4.7. Predict LDA. To predict values based on a model, we can use function predict ().
+
+4.8. Toward clustering: distance measures. Distance measures used to measured simmilarity and dissimilarity of objects. The function dist() is used for this measure. The most common distant measure is euclidean distance.
+
+4.9. K-means clustering. It is the most used and known clustering method. kmeans() function is used for this clustering.
+
+4.10. K-means: determine the k. To determine k, K-means need number of clusters as an argument. One way to determine it is to look at the look how the total of within cluster sum of squares (WCSS) behaves when the number of cluster changes. We can use the function set.seed() to determine km().

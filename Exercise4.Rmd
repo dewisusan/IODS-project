@@ -117,7 +117,8 @@ Hints:
 # Boston dataset is available
 
 # calculate the correlation matrix and round it
-cor_matrix <- cor(Boston) 
+cor_matrix <- cor(Boston)
+cor_matrix<-cor(Boston) %>% round(digits = 2)
 
 # print the correlation matrix
 cor_matrix
@@ -126,20 +127,7 @@ cor_matrix
 library(corrplot)
 corrplot(cor_matrix, method="circle")
 
-round(Boston, digits = 2)
-
-cor_matrix <- round (Boston, digits = 2)
-
-cor_matrix
-
-library(corrplot)
-corrplot(cor_matrix, type = "upper")
-
-round(Boston, digits = 2)
-
-cor_matrix <- round (Boston, digits = 2)
-
-cor_matrix
+corrplot(cor_matrix, method="circle", type = "upper", cl.pos = "b", tl.pos = "d", tl.cex = 0.6)
 
 
 ```
@@ -378,6 +366,7 @@ classes <- as.numeric(train$crime)
 plot(lda.fit, dimen = 2, col = classes, pch = classes)
 lda.arrows(lda.fit, myscale = 2)
 
+plot
 ```
 
 

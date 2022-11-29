@@ -399,7 +399,7 @@ use R Markdown syntax.</em></p>
 <pre class="r"><code># This is a so-called &quot;R chunk&quot; where you can write R code.
 
 date()</code></pre>
-<pre><code>## [1] &quot;Mon Nov 28 18:40:05 2022&quot;</code></pre>
+<pre><code>## [1] &quot;Tue Nov 29 08:48:33 2022&quot;</code></pre>
 <p>The text continues here.</p>
 <p>This is my very first time use R program and a bit confuse, but try
 hard to learn. Eventhough I’m late for doing this, it should have done
@@ -419,7 +419,7 @@ writing and reading R code as well as statistical methods.</li>
 advanced methods you are using.</li>
 </ul>
 <pre class="r"><code>date()</code></pre>
-<pre><code>## [1] &quot;Mon Nov 28 18:40:06 2022&quot;</code></pre>
+<pre><code>## [1] &quot;Tue Nov 29 08:48:33 2022&quot;</code></pre>
 <p>Resume of this chapter:</p>
 <p>In this Chapter 2, the exercise part 1 started with learn to view and
 reading data. How to look dimension and structure of the data using
@@ -453,7 +453,7 @@ writing and reading R code as well as statistical methods.</li>
 advanced methods you are using.</li>
 </ul>
 <pre class="r"><code>date()</code></pre>
-<pre><code>## [1] &quot;Mon Nov 28 18:40:06 2022&quot;</code></pre>
+<pre><code>## [1] &quot;Tue Nov 29 08:48:34 2022&quot;</code></pre>
 <p>Chapter 3. Logistic regression Part 3.1, More datasets, is practise
 to combine more than one data within the same analysis. To combine data,
 using paste() function, and we can see the data with function
@@ -496,15 +496,8 @@ computing loss_func, an do cross validation using cv() function.</p>
 <h1>Clustering and Classification</h1>
 <p><em>Describe the work you have done this week and summarize your
 learning.</em></p>
-<ul>
-<li>Describe your work and results clearly.</li>
-<li>Assume the reader has an introductory course level understanding of
-writing and reading R code as well as statistical methods.</li>
-<li>Assume the reader has no previous knowledge of your data or the more
-advanced methods you are using.</li>
-</ul>
 <pre class="r"><code>date()</code></pre>
-<pre><code>## [1] &quot;Mon Nov 28 18:40:06 2022&quot;</code></pre>
+<pre><code>## [1] &quot;Tue Nov 29 08:48:34 2022&quot;</code></pre>
 <p>Chapter 4, learning Clustering and classification</p>
 <p>4.1. Dataset inside R. The sample data that used in this chapter is a
 data named “Boston” dataset from MASS. We can see the structure of the
@@ -516,16 +509,31 @@ we can draw matrix with cor_matrix() function.</p>
 <p>4.3. Scale the whole dataset. To scale the data, use function scale()
 function to substract the column mean from the corresponding column and
 divide the difference with standard deviation.To makea data frame use
-function, as.data.frame(). 4.4. Creating a factor variable. To create a
-factor variable, we can use quantile() function and save the result to
-‘bins’. To create a vector, use cut () function and set the ‘break’. We
-can see the result in the table. 4.5. Divide and conquer: train and test
-sets. To test the model prediction whether it is fit or not, we can
-train the model by splitting the data and train as a new data. Some
-function that can be use are train(), test(), correct_classes(). 4.6.
-Linear discriminant analysis. It is a classification and dimensional
-reduction method which separatethe target variables from the linear
-combination variables.</p>
+function, as.data.frame().</p>
+<p>4.4. Creating a factor variable. To create a factor variable, we can
+use quantile() function and save the result to ‘bins’. To create a
+vector, use cut () function and set the ‘break’. We can see the result
+in the table.</p>
+<p>4.5. Divide and conquer: train and test sets. To test the model
+prediction whether it is fit or not, we can train the model by splitting
+the data and train as a new data. Some function that can be use are
+train(), test(), correct_classes().</p>
+<p>4.6. Linear discriminant analysis. It is a classification and
+dimensional reduction method which separatethe target variables from the
+linear combination variables.</p>
+<p>4.7. Predict LDA. To predict values based on a model, we can use
+function predict ().</p>
+<p>4.8. Toward clustering: distance measures. Distance measures used to
+measured simmilarity and dissimilarity of objects. The function dist()
+is used for this measure. The most common distant measure is euclidean
+distance.</p>
+<p>4.9. K-means clustering. It is the most used and known clustering
+method. kmeans() function is used for this clustering.</p>
+<p>4.10. K-means: determine the k. To determine k, K-means need number
+of clusters as an argument. One way to determine it is to look at the
+look how the total of within cluster sum of squares (WCSS) behaves when
+the number of cluster changes. We can use the function set.seed() to
+determine km().</p>
 <hr />
 <p>(more chapters to be added similarly as we proceed with the
 course!)</p>
